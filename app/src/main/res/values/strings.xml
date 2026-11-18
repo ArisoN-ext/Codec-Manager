@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Codec Manager</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_profiles">Profiles</string>
+    <string name="nav_diagnostics">Diagnostics</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Sound without compromise</string>
+    <string name="onboarding_body_1">Codec Manager switches your headphones to the best LDAC quality whenever they connect.</string>
+    <string name="onboarding_title_2">Codec access, the right way</string>
+    <string name="onboarding_body_2">Android only allows apps associated with your headphones through the Companion Device Manager to change the codec. No root required.</string>
+    <string name="onboarding_title_3">Associate your headphones</string>
+    <string name="onboarding_body_3">Pick a paired device and confirm the system prompt. You only need to do this once per device.</string>
+    <string name="onboarding_title_4">You are all set</string>
+    <string name="onboarding_body_4">On connection the app applies your profile and verifies the result. If something goes wrong, diagnostics will tell you why.</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_back">Back</string>
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_finish">Get started</string>
+    <string name="onboarding_open_settings">Open settings</string>
+
+    <!-- Permissions -->
+    <string name="permission_bluetooth_title">Bluetooth permission</string>
+    <string name="permission_bluetooth_body">Required to see your headphones and read the current codec.</string>
+    <string name="permission_bluetooth_grant">Allow</string>
+    <string name="permission_notifications_title">Notifications</string>
+    <string name="permission_notifications_body">Shows apply results and quick actions.</string>
+    <string name="permission_notifications_grant">Allow</string>
+    <string name="permission_battery_title">Battery optimization</string>
+    <string name="permission_battery_body">Exclude the app from battery optimization so auto-switch keeps working in the background.</string>
+    <string name="permission_battery_grant">Open settings</string>
+    <string name="permission_granted">Granted</string>
+    <string name="permission_denied">Not granted</string>
+
+    <!-- Home -->
+    <string name="home_title">Codec Manager</string>
+    <string name="home_subtitle">Your sound quality, under control</string>
+    <string name="home_status_service_on">Auto-switch is on</string>
+    <string name="home_status_service_off">Auto-switch is off</string>
+    <string name="home_no_device_title">No headphones connected</string>
+    <string name="home_no_device_body">Connect an LDAC device or associate it for automatic switching.</string>
+    <string name="home_active_device">Active device</string>
+    <string name="home_codec">Codec</string>
+    <string name="home_quality">Quality</string>
+    <string name="home_quality_hint">Quick apply. Persist it in the device profile.</string>
+    <string name="home_sample_rate">Sample rate</string>
+    <string name="home_bit_depth">Bit depth</string>
+    <string name="home_channels">Channels</string>
+    <string name="bits_16">16 bit</string>
+    <string name="bits_24">24 bit</string>
+    <string name="bits_32">32 bit</string>
+    <string name="bits_24_32">24/32 bit</string>
+    <string name="channels_mono">Mono</string>
+    <string name="channels_stereo">Stereo</string>
+    <string name="channels_dual">Dual</string>
+    <string name="home_apply">Apply</string>
+    <string name="home_applying">Applying…</string>
+    <string name="home_apply_success">Quality applied</string>
+    <string name="home_apply_noop">Already set</string>
+    <string name="home_apply_unverified">Sent, verification unavailable</string>
+    <string name="home_devices_title">Associated devices</string>
+    <string name="home_devices_empty">No associated devices yet</string>
+    <string name="home_devices_add">Associate device</string>
+    <string name="home_device_apply_on_connect">On connect</string>
+    <string name="home_device_associated">Associated</string>
+    <string name="home_device_not_associated">Not associated</string>
+    <string name="home_read_status">Refresh status</string>
+    <string name="home_connected">Connected</string>
+    <string name="home_disconnected">Disconnected</string>
+
+    <!-- Quality presets -->
+    <string name="quality_audio">Quality</string>
+    <string name="quality_audio_desc">990/909 kbps</string>
+    <string name="quality_balanced">Balanced</string>
+    <string name="quality_balanced_desc">660/606 kbps</string>
+    <string name="quality_connection">Connection</string>
+    <string name="quality_connection_desc">330/303 kbps</string>
+    <string name="quality_adaptive">Adaptive</string>
+    <string name="quality_adaptive_desc">Dynamic bitrate</string>
+    <string name="quality_default">Default</string>
+
+    <!-- Profiles -->
+    <string name="profiles_title">Profiles</string>
+    <string name="profiles_empty_title">No profiles yet</string>
+    <string name="profiles_empty_body">Add a device profile to apply settings automatically.</string>
+    <string name="profiles_add">New profile</string>
+    <string name="profile_edit">Device profile</string>
+    <string name="profile_device">Device</string>
+    <string name="profile_enabled">Profile enabled</string>
+    <string name="profile_apply_on_connect">Apply on connect</string>
+    <string name="profile_lock_quality">Keep quality</string>
+    <string name="profile_lock_quality_desc">Re-apply settings if the system resets them. At most three times per connection.</string>
+    <string name="profile_codec">Codec</string>
+    <string name="profile_ldac_quality">LDAC quality</string>
+    <string name="profile_sample_rate">Sample rate</string>
+    <string name="profile_sample_rate_auto">Device default</string>
+    <string name="profile_bits">Bit depth</string>
+    <string name="profile_channels">Channels</string>
+    <string name="profile_save">Save</string>
+    <string name="profile_delete">Delete</string>
+    <string name="profile_delete_confirm">Delete this profile?</string>
+    <string name="profile_max">Maximum</string>
+    <string name="profile_auto">Auto</string>
+    <string name="profile_custom">Custom</string>
+
+    <!-- Diagnostics -->
+    <string name="diagnostics_title">Diagnostics</string>
+    <string name="diag_check_bluetooth">Bluetooth permission</string>
+    <string name="diag_check_adapter">Bluetooth is on</string>
+    <string name="diag_check_api">Hidden A2DP methods available</string>
+    <string name="diag_check_association">Device association</string>
+    <string name="diag_check_connected">A2DP connected</string>
+    <string name="diag_check_battery">Battery optimization disabled</string>
+    <string name="diag_ok">OK</string>
+    <string name="diag_fail">Failed</string>
+    <string name="diag_unknown">Unknown</string>
+    <string name="diag_current_status">Current status</string>
+    <string name="diag_capabilities">Codec capabilities</string>
+    <string name="diag_log">Event log</string>
+    <string name="diag_log_empty">No events yet</string>
+    <string name="diag_export">Export log</string>
+    <string name="diag_clear">Clear</string>
+    <string name="diag_run_test">Test apply</string>
+    <string name="diag_no_device">No A2DP device connected</string>
+    <string name="diag_device_info">Device</string>
+    <string name="diag_android">Android</string>
+    <string name="diag_oem">Manufacturer</string>
+    <string name="diag_privileged">Privileged mode</string>
+    <string name="diag_associated_devices">Associated devices: %1$d</string>
+    <string name="diag_associated_count">Associated devices</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_automation">Automation</string>
+    <string name="settings_auto_switch">Auto-switch</string>
+    <string name="settings_auto_switch_desc">Apply the profile when a device connects</string>
+    <string name="settings_start_on_boot">Start on boot</string>
+    <string name="settings_notify">Notifications</string>
+    <string name="settings_notify_desc">Show apply results</string>
+    <string name="settings_theme">Appearance</string>
+    <string name="settings_theme_system">System</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_dynamic_color">Dynamic colors</string>
+    <string name="settings_dynamic_color_desc">Use the Material You palette</string>
+    <string name="settings_reduce_motion">Reduce motion</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_system">System</string>
+    <string name="settings_about">About</string>
+    <string name="settings_version">Version %1$s</string>
+    <string name="settings_about_body">A local app without ads, analytics or network calls. It changes A2DP codec settings through the official Companion Device Manager mechanism.</string>
+    <string name="settings_open_bluetooth">Bluetooth settings</string>
+    <string name="settings_battery_optimization">Exclude from battery optimization</string>
+    <string name="settings_tile_hint">Add the “Auto-switch” tile to your quick settings.</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_status">Codec status</string>
+    <string name="notification_channel_status_desc">Codec apply results</string>
+    <string name="notification_title">Codec Manager</string>
+    <string name="notification_service_text">Codec auto-switch is active</string>
+    <string name="notification_service_device">Active device: %1$s</string>
+    <string name="notification_applied">%1$s: %2$s</string>
+    <string name="notification_failed">Could not apply settings</string>
+    <string name="notification_action_quality">Quality</string>
+    <string name="notification_action_balanced">Balanced</string>
+    <string name="notification_action_open">Open</string>
+    <string name="notification_action_disable">Turn off</string>
+
+    <!-- Common -->
+    <string name="common_cancel">Cancel</string>
+    <string name="common_ok">OK</string>
+    <string name="common_close">Close</string>
+    <string name="common_retry">Retry</string>
+    <string name="common_unknown">Unknown</string>
+    <string name="common_error">Error</string>
+    <string name="common_yes">Yes</string>
+    <string name="common_no">No</string>
+    <string name="common_loading">Loading…</string>
+    <string name="common_mac">MAC: %1$s</string>
+
+    <!-- Errors -->
+    <string name="error_not_associated">This device is not associated. Associate it in the app.</string>
+    <string name="error_permission">Bluetooth permission is missing.</string>
+    <string name="error_hidden_api">This firmware does not expose codec control methods.</string>
+    <string name="error_adapter_off">Bluetooth is off.</string>
+    <string name="error_not_connected">The device is not connected over A2DP.</string>
+    <string name="error_timeout">The device did not confirm the settings.</string>
+    <string name="error_rejected">The headphones rejected the configuration.</string>
+    <string name="error_unknown">Unknown error.</string>
+    <string name="error_bluetooth_permission">Grant Bluetooth device access to continue.</string>
+
+    <!-- Tile -->
+    <string name="tile_label">Auto-switch</string>
+    <string name="tile_on">Auto-switch is on</string>
+    <string name="tile_off">Auto-switch is off</string>
+
+    <!-- Widget -->
+    <string name="widget_title">Codec Manager</string>
+    <string name="widget_description">Current codec and quick actions</string>
+
+    <!-- Onboarding association -->
+    <string name="assoc_title">Associate a device</string>
+    <string name="assoc_body">Android will show an association prompt. This is the official way to give the app codec control.</string>
+    <string name="assoc_pick">Pick a device</string>
+    <string name="assoc_no_paired">No paired devices</string>
+    <string name="assoc_request">Associate</string>
+    <string name="assoc_remove">Remove association</string>
+    <string name="assoc_success">Device associated</string>
+    <string name="assoc_failed">Could not associate the device</string>
+    <string name="assoc_already">Already associated</string>
+</resources>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Codec Manager</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Главная</string>
+    <string name="nav_profiles">Профили</string>
+    <string name="nav_diagnostics">Диагностика</string>
+    <string name="nav_settings">Настройки</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Звук без компромиссов</string>
+    <string name="onboarding_body_1">Codec Manager автоматически включает лучшее качество LDAC, когда вы подключаете наушники.</string>
+    <string name="onboarding_title_2">Доступ к настройкам кодека</string>
+    <string name="onboarding_body_2">Android разрешает менять кодек только приложениям, ассоциированным с наушниками через Companion Device Manager. Никакого root не нужно.</string>
+    <string name="onboarding_title_3">Свяжите наушники</string>
+    <string name="onboarding_body_3">Выберите спаренные наушники и подтвердите системный запрос. Ассоциация нужна один раз для каждого устройства.</string>
+    <string name="onboarding_title_4">Готово</string>
+    <string name="onboarding_body_4">При подключении приложение выставит выбранный профиль и проверит результат. Если что-то пойдёт не так — диагностика покажет причину.</string>
+    <string name="onboarding_next">Далее</string>
+    <string name="onboarding_back">Назад</string>
+    <string name="onboarding_skip">Пропустить</string>
+    <string name="onboarding_finish">Начать</string>
+    <string name="onboarding_open_settings">Открыть настройки</string>
+
+    <!-- Permissions -->
+    <string name="permission_bluetooth_title">Разрешение Bluetooth</string>
+    <string name="permission_bluetooth_body">Нужно, чтобы видеть наушники и читать текущий кодек.</string>
+    <string name="permission_bluetooth_grant">Разрешить</string>
+    <string name="permission_notifications_title">Уведомления</string>
+    <string name="permission_notifications_body">Показываем статус применения и быстрые действия.</string>
+    <string name="permission_notifications_grant">Разрешить</string>
+    <string name="permission_battery_title">Оптимизация батареи</string>
+    <string name="permission_battery_body">Чтобы автопереключение работало в фоне, исключите приложение из оптимизации батареи.</string>
+    <string name="permission_battery_grant">Открыть настройки</string>
+    <string name="permission_granted">Разрешено</string>
+    <string name="permission_denied">Не разрешено</string>
+
+    <!-- Home -->
+    <string name="home_title">Codec Manager</string>
+    <string name="home_subtitle">Качество звука под контролем</string>
+    <string name="home_status_service_on">Автопереключение включено</string>
+    <string name="home_status_service_off">Автопереключение выключено</string>
+    <string name="home_no_device_title">Наушники не подключены</string>
+    <string name="home_no_device_body">Подключите LDAC-устройство или свяжите его для автопереключения.</string>
+    <string name="home_active_device">Активное устройство</string>
+    <string name="home_codec">Кодек</string>
+    <string name="home_quality">Качество</string>
+    <string name="home_quality_hint">Быстрое применение. Постоянный выбор — в профиле устройства.</string>
+    <string name="home_sample_rate">Частота</string>
+    <string name="home_bit_depth">Разрядность</string>
+    <string name="home_channels">Каналы</string>
+    <string name="bits_16">16 бит</string>
+    <string name="bits_24">24 бит</string>
+    <string name="bits_32">32 бит</string>
+    <string name="bits_24_32">24/32 бит</string>
+    <string name="channels_mono">Моно</string>
+    <string name="channels_stereo">Стерео</string>
+    <string name="channels_dual">Двойной</string>
+    <string name="home_apply">Применить</string>    <string name="home_applying">Применяем…</string>
+    <string name="home_apply_success">Качество применено</string>
+    <string name="home_apply_noop">Уже установлено</string>
+    <string name="home_apply_unverified">Отправлено, подтверждение недоступно</string>
+    <string name="home_devices_title">Связанные устройства</string>
+    <string name="home_devices_empty">Пока нет связанных устройств</string>
+    <string name="home_devices_add">Связать устройство</string>
+    <string name="home_device_apply_on_connect">При подключении</string>
+    <string name="home_device_associated">Связано</string>
+    <string name="home_device_not_associated">Не связано</string>
+    <string name="home_read_status">Обновить статус</string>
+    <string name="home_connected">Подключено</string>
+    <string name="home_disconnected">Не подключено</string>
+
+    <!-- Quality presets -->
+    <string name="quality_audio">Качество</string>
+    <string name="quality_audio_desc">990/909 kbps</string>
+    <string name="quality_balanced">Баланс</string>
+    <string name="quality_balanced_desc">660/606 kbps</string>
+    <string name="quality_connection">Связь</string>
+    <string name="quality_connection_desc">330/303 kbps</string>
+    <string name="quality_adaptive">Адаптивно</string>
+    <string name="quality_adaptive_desc">Динамический битрейт</string>
+    <string name="quality_default">По умолчанию</string>
+
+    <!-- Profiles -->
+    <string name="profiles_title">Профили</string>
+    <string name="profiles_empty_title">Нет профилей</string>
+    <string name="profiles_empty_body">Добавьте профиль для устройства, чтобы применять настройки автоматически.</string>
+    <string name="profiles_add">Новый профиль</string>
+    <string name="profile_edit">Профиль устройства</string>
+    <string name="profile_device">Устройство</string>
+    <string name="profile_enabled">Профиль включён</string>
+    <string name="profile_apply_on_connect">Применять при подключении</string>
+    <string name="profile_lock_quality">Удерживать качество</string>
+    <string name="profile_lock_quality_desc">Повторно применять настройки, если система их сбросила. Не чаще трёх раз за подключение.</string>
+    <string name="profile_codec">Кодек</string>
+    <string name="profile_ldac_quality">Качество LDAC</string>
+    <string name="profile_sample_rate">Частота дискретизации</string>
+    <string name="profile_sample_rate_auto">Как у устройства</string>
+    <string name="profile_bits">Разрядность</string>
+    <string name="profile_channels">Каналы</string>
+    <string name="profile_save">Сохранить</string>
+    <string name="profile_delete">Удалить</string>
+    <string name="profile_delete_confirm">Удалить профиль?</string>
+    <string name="profile_max">Максимум</string>
+    <string name="profile_auto">Авто</string>
+    <string name="profile_custom">Свои настройки</string>
+
+    <!-- Diagnostics -->
+    <string name="diagnostics_title">Диагностика</string>
+    <string name="diag_check_bluetooth">Разрешение Bluetooth</string>
+    <string name="diag_check_adapter">Bluetooth включён</string>
+    <string name="diag_check_api">Скрытые методы A2DP доступны</string>
+    <string name="diag_check_association">Ассоциация с устройством</string>
+    <string name="diag_check_connected">A2DP подключён</string>
+    <string name="diag_check_battery">Оптимизация батареи отключена</string>
+    <string name="diag_ok">OK</string>
+    <string name="diag_fail">Ошибка</string>
+    <string name="diag_unknown">Неизвестно</string>
+    <string name="diag_current_status">Текущий статус</string>
+    <string name="diag_capabilities">Возможности кодека</string>
+    <string name="diag_log">Журнал событий</string>
+    <string name="diag_log_empty">Событий пока нет</string>
+    <string name="diag_export">Экспорт журнала</string>
+    <string name="diag_clear">Очистить</string>
+    <string name="diag_run_test">Тестовое применение</string>
+    <string name="diag_no_device">Нет подключённого A2DP-устройства</string>
+    <string name="diag_device_info">Устройство</string>
+    <string name="diag_android">Android</string>
+    <string name="diag_oem">Производитель</string>
+    <string name="diag_privileged">Привилегированный режим</string>
+    <string name="diag_associated_devices">Ассоциировано устройств: %1$d</string>
+    <string name="diag_associated_count">Ассоциировано устройств</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Настройки</string>
+    <string name="settings_automation">Автоматизация</string>
+    <string name="settings_auto_switch">Автопереключение</string>
+    <string name="settings_auto_switch_desc">Применять профиль при подключении устройства</string>
+    <string name="settings_start_on_boot">Запускать при загрузке</string>
+    <string name="settings_notify">Уведомления</string>
+    <string name="settings_notify_desc">Показывать результат применения</string>
+    <string name="settings_theme">Оформление</string>
+    <string name="settings_theme_system">Как в системе</string>
+    <string name="settings_theme_light">Светлая</string>
+    <string name="settings_theme_dark">Тёмная</string>
+    <string name="settings_dynamic_color">Динамические цвета</string>
+    <string name="settings_dynamic_color_desc">Использовать палитру Material You</string>
+    <string name="settings_reduce_motion">Меньше анимаций</string>
+    <string name="settings_language">Язык</string>
+    <string name="settings_language_system">Системный</string>
+    <string name="settings_about">О приложении</string>
+    <string name="settings_version">Версия %1$s</string>
+    <string name="settings_about_body">Локальное приложение без рекламы, аналитики и сетевых запросов. Меняет настройки A2DP-кодека через официальный механизм Companion Device Manager.</string>
+    <string name="settings_open_bluetooth">Настройки Bluetooth</string>
+    <string name="settings_battery_optimization">Исключить из оптимизации батареи</string>
+    <string name="settings_tile_hint">Добавьте плитку «Автопереключение» в быстрые настройки.</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_status">Статус кодека</string>
+    <string name="notification_channel_status_desc">Результат применения настроек кодека</string>
+    <string name="notification_title">Codec Manager</string>
+    <string name="notification_service_text">Автопереключение кодека активно</string>
+    <string name="notification_service_device">Активное устройство: %1$s</string>
+    <string name="notification_applied">%1$s: %2$s</string>
+    <string name="notification_failed">Не удалось применить настройки</string>
+    <string name="notification_action_quality">Качество</string>
+    <string name="notification_action_balanced">Баланс</string>
+    <string name="notification_action_open">Открыть</string>
+    <string name="notification_action_disable">Выключить</string>
+
+    <!-- Common -->
+    <string name="common_cancel">Отмена</string>
+    <string name="common_ok">OK</string>
+    <string name="common_close">Закрыть</string>
+    <string name="common_retry">Повторить</string>
+    <string name="common_unknown">Неизвестно</string>
+    <string name="common_error">Ошибка</string>
+    <string name="common_yes">Да</string>
+    <string name="common_no">Нет</string>
+    <string name="common_loading">Загрузка…</string>
+    <string name="common_mac">MAC: %1$s</string>
+
+    <!-- Errors -->
+    <string name="error_not_associated">Устройство не ассоциировано. Свяжите его в приложении.</string>
+    <string name="error_permission">Нет разрешения Bluetooth.</string>
+    <string name="error_hidden_api">Прошивка не предоставляет методы смены кодека.</string>
+    <string name="error_adapter_off">Bluetooth выключен.</string>
+    <string name="error_not_connected">Устройство не подключено по A2DP.</string>
+    <string name="error_timeout">Устройство не подтвердило настройки.</string>
+    <string name="error_rejected">Наушники отклонили конфигурацию.</string>
+    <string name="error_unknown">Неизвестная ошибка.</string>
+    <string name="error_bluetooth_permission">Разрешите доступ к устройствам Bluetooth, чтобы продолжить.</string>
+
+    <!-- Tile -->
+    <string name="tile_label">Автопереключение</string>
+    <string name="tile_on">Автопереключение включено</string>
+    <string name="tile_off">Автопереключение выключено</string>
+
+    <!-- Widget -->
+    <string name="widget_title">Codec Manager</string>
+    <string name="widget_description">Текущий кодек и быстрые действия</string>
+
+    <!-- Onboarding association -->
+    <string name="assoc_title">Связывание устройства</string>
+    <string name="assoc_body">Система покажет запрос на ассоциацию. Это официальный способ дать приложению доступ к настройкам кодека.</string>
+    <string name="assoc_pick">Выберите устройство</string>
+    <string name="assoc_no_paired">Нет спаренных устройств</string>
+    <string name="assoc_request">Связать</string>
+    <string name="assoc_remove">Удалить связь</string>
+    <string name="assoc_success">Устройство связано</string>
+    <string name="assoc_failed">Не удалось связать устройство</string>
+    <string name="assoc_already">Уже связано</string>
+</resources>

@@ -1,0 +1,50 @@
+# Gradle / Android build output
+.gradle/
+.gradle-home/
+.kotlin/
+build/
+app/build/
+captures/
+.cxx/
+.externalNativeBuild/
+*.hprof
+*.log
+
+# Generated APKs and bundles
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Local SDK and signing configuration
+local.properties
+keystore.properties
+*.jks
+*.keystore
+
+# Temporary files and local scratch space
+.tmp/
+.secrets/
+*.orig
+*.rej
+
+# IDE and editor state
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.fleet/
+.project
+.classpath
+.settings/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets
+.env
+.env.*
+*.pem
