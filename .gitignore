@@ -21,6 +21,12 @@ local.properties
 keystore.properties
 *.jks
 *.keystore
+*.b64
+*.p12
+*.pfx
+release*.jks*
+secrets.env
+secrets.txt
 
 # Temporary files and local scratch space
 .tmp/

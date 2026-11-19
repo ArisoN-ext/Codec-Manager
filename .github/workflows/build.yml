@@ -141,10 +141,44 @@ jobs:
           "$ANDROID_HOME/build-tools/37.0.0/apksigner" verify \
             --print-certs app/build/outputs/apk/release/app-release.apk
 
-      - name: Publish GitHub release
+      - name: Check existing release
+        id: release_check
         if: steps.signing.outputs.available == 'true'
-        uses: softprops/action-gh-release@v3
-        with:
-          files: app/build/outputs/apk/release/app-release.apk
-          generate_release_notes: true
-          fail_on_unmatched_files: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          tag="$GITHUB_REF_NAME"
+          draft=$(gh release view "$tag" --repo "$GITHUB_REPOSITORY" \
+            --json isDraft --jq '.isDraft' 2>/dev/null || true)
+          if [ -z "$draft" ]; then
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          elif [ "$draft" = "true" ]; then
+            echo "Deleting stale draft release $tag" >> "$GITHUB_STEP_SUMMARY"
+            gh release delete "$tag" --repo "$GITHUB_REPOSITORY" --yes
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Release $tag already exists; immutable releases cannot be updated." >> "$GITHUB_STEP_SUMMARY"
+            echo "Bump the version and push a new tag to publish a new build." >> "$GITHUB_STEP_SUMMARY"
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish GitHub release
+        if: steps.signing.outputs.available == 'true' && steps.release_check.outputs.exists == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          tag="$GITHUB_REF_NAME"
+          gh release create "$tag" \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "$tag" \
+            --draft \
+            --generate-notes
+          gh release upload "$tag" \
+            --repo "$GITHUB_REPOSITORY" \
+            app/build/outputs/apk/release/app-release.apk \
+            --clobber
+          gh release edit "$tag" \
+            --repo "$GITHUB_REPOSITORY" \
+            --draft=false
